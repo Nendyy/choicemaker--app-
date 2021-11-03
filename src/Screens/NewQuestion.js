@@ -5,7 +5,6 @@ import OptionsInputContainer from "../Components/OptionsInputContainer";
 import Button from "../Components/Button";
 import { StateContext } from "../context";
 
-
 const NewQuestion = () => {
   const history = useHistory();
   const [question, setQuestion] = useState("");
@@ -49,10 +48,15 @@ const NewQuestion = () => {
 
   return (
     <main>
-      <div className='content'>
+       <div className='navbar'> 
+        <nav><h1> ChoiceMaker </h1>
+         <p> 'Choicemaker app makes your decision making easier, helps you make great choices'</p>
+         </nav>
+         </div>
+      <div className="content">
         <QuestionContainer question={question} setQuestion={setQuestion} />
         <OptionsInputContainer options={options} setOptions={setOptions} />
-        <div>
+        <div className="button-group">
           <Button title="include option" handleClick={handleIncludeOption} />
           <Button handleClick={handleViewResult} title="View Result" />
         </div>

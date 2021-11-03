@@ -1,6 +1,6 @@
 const OptionsInputContainer = (props) => {
   return (
-    <div>
+    <div className="add-option">
       {props.options.map((_, index) => (
         <div key={index}>
           <input

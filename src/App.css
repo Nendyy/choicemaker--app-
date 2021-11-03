@@ -1,18 +1,137 @@
 main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  padding-top: 80px;
 }
 
-.content {
-  width: 100%;
+main > div.content {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  width: 85%;
 }
 
-.content > div {
+div.content .question {
+  width: 100%;
+  color: beige;
+ 
+}
 
-  
+.navbar {
+  color: beige;
+  display: flex;
+  font-weight:bold;
+  background-color: rgb(202, 127, 127);
+  padding-left: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+div.content .question textarea {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: beige;
+  font-size: large;
+  font-weight: bold;
+  resize: none;
+  overflow: auto;
+  padding-bottom: 50px;
+}
+
+.content .button-group {
+  margin: 20px 0;
+}
+
+.content button {
+  background-color: #0f7be4;
+  color: white;
+  border: 1px solid #2285e9;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content .add-option {
+  width: 100%;
+}
+
+.content .add-option > div {
+  margin: 10px 0;
+}
+
+.content .add-option input {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+  color: beige;
+  padding: 8px 15px;
+  border: 2px solid #2d4866;
+  border-radius: 100px;
+}
+
+.content .answer {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.content .answer > div,
+.all-questions .occurrences {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 15px;
+  border: 2px solid #2d4866;
+  border-radius: 100px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  color: beige;
+}
+
+.all-questions {
+  width: 100%;
+}
+
+.all-questions .occurrences {
+  width: 100%;
+}
+
+.all-questions .occurrences span:first-of-type {
+  margin-right: 20px;
+}
+
+.checkbox,
+.all-questions .occurrences span:last-of-type {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 2px solid #2d4866;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-questions .occurrences span:last-of-type {
+  font-size: 12px;
+}
+
+.checkbox.isAnswer {
+  background-color: #0f7be4 !important;
+}
+
+.content h1 {
+  color: beige;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 761px) {
+  main > div.content {
+    max-width: 560px;
+  }
 }

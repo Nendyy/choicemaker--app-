@@ -1,6 +1,6 @@
 const ResultContainer = (props) => {
   return (
-    <div>
+    <div className="occurrences">
       <span>{props.question}</span>
       <span>{props.occurrence}</span>
     </div>

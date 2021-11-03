@@ -10,11 +10,6 @@ const Questions = () => {
 
   return (
     <main>
-      <div className='navbar'> 
-        <nav><h1> ChoiceMaker </h1>
-         <p> 'Choicemaker app makes your decision making easier, helps you make great choices'</p>
-         </nav>
-         </div>
       <div className="content">
         <h1>Asked questions</h1>
         <div className="all-questions">

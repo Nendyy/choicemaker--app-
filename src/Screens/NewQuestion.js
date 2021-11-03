@@ -48,11 +48,10 @@ const NewQuestion = () => {
 
   return (
     <main>
-       <div className='navbar'> 
-        <nav><h1> ChoiceMaker </h1>
-         <p> 'Choicemaker app makes your decision making easier, helps you make great choices'</p>
-         </nav>
-         </div>
+        <div>
+          <h1>ChoiceMaker</h1>
+          <p>Choicemaker app makes your decision-making easier, helps you make great choices!</p>
+        </div>
       <div className="content">
         <QuestionContainer question={question} setQuestion={setQuestion} />
         <OptionsInputContainer options={options} setOptions={setOptions} />
